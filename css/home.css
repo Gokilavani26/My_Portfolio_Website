@@ -68,6 +68,23 @@ a.active{
   padding: 13px;
 }
 
-.btn-custom :hover{
-  background-color: white;          
+/* Socila Media */
+.social-media{
+  display: flex;
+  justify-content: space-around;
+  margin: 5%;
+  margin-top: 7%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.row a{
+    margin-right: 10%;
+}
+
+.row a:hover{
+    transform: scale(1.2);
 }
