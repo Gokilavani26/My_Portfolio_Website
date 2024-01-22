@@ -1,0 +1,73 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Courier New', monospace;
+}
+
+.primary-clr{
+    color: rgb(93, 25, 156);
+}
+
+a .active{
+  color: rgb(93, 25, 156);
+}
+
+.title-center{
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.navbar {
+ font-size: larger;
+ display: flex;
+ justify-content: center;
+ margin-top: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  color: black;
+  font-size: x-large;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 4px;
+  border-radius: 20px;
+  top: 43px;
+  content: "";
+  position: absolute;
+  background-color: rgb(93, 25, 156);
+}
+
+a.active{
+  color: rgb(93, 25, 156);
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
+
+
+.btn-custom{
+  text-decoration: none;
+  background-color: rgb(93, 25, 156);
+  color: white;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 13px;
+}
+
+.btn-custom :hover{
+  background-color: white;          
+}
