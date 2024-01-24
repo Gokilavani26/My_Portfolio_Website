@@ -8,14 +8,112 @@
     <title>Gokilavani Portfolio</title>
     <style>
          body{
-          background-image: url('https://media.istockphoto.com/id/1319844646/vector/grey-cement-texture-of-floor-vector-3d-backdrop-of-gray-concrete-wall-room-surface-with.jpg?s=612x612&w=0&k=20&c=JTiP-TB-iz797sgwZMkjDFzPGr4H86NrnJbvyczoOi8=');
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        }
+            background-image: url('https://media.istockphoto.com/id/1319844646/vector/grey-cement-texture-of-floor-vector-3d-backdrop-of-gray-concrete-wall-room-surface-with.jpg?s=612x612&w=0&k=20&c=JTiP-TB-iz797sgwZMkjDFzPGr4H86NrnJbvyczoOi8=');
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+          }
+
+          .experience{
+            margin-top: 2%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            }
+
+            .timeline{
+            width:800px;
+            border-radius: 20px;
+            background-color:rgb(222, 198, 245);
+            color:#fff;
+            padding:30px 30px;
+            box-shadow:0px 0px 10px rgba(0,0,0,.5);
+
+            }
+
+            .timeline ul{
+            list-style-type:none;
+            border-left:2px solid white;
+            padding:10px 5px;
+            }
+
+            .company{
+                color: black;
+                margin: 1%;
+            }
+
+            .timeline ul li{
+            padding:20px 20px;
+            position:relative;
+            cursor:pointer;
+            transition:.5s;
+            border-radius: 20px;
+            box-shadow: 0px 0px 2px white;
+            background-color: rgb(195, 179, 214);
+            margin-top: 2%;
+            }
+
+            .timeline ul li span{
+            display:inline-block;
+            background-color:rgb(93, 25, 156);
+            color: white;
+            border-radius:25px;
+            padding:5px 5px;
+            font-size:15px;
+            text-align:center;
+            }
+
+            .timeline ul li .content h3{
+            color:black;
+            font-size:17px;
+            padding-top:5px;
+            }
+
+            .timeline ul li .content p{
+              color: black;
+            padding:5px 0px 15px 0px;
+            font-size:15px;
+            }
+
+            .timeline ul li:before{
+            position:absolute;
+            content:'';
+            width:10px;
+            height:10px;
+            background-color:white;
+            border: 1px solid rgb(162, 0, 255);
+            border-radius:50%;
+            left:-11px;
+            top:29px;
+            transition:.5s;
+            }
+
+            .timeline ul li:hover{
+            background-color:rgb(244, 239, 250);
+            color: black;
+            }
+
+            .timeline ul li:hover:before{
+            background-color:rgb(162, 0, 255);
+            box-shadow:0px 0px 10px 2px rgb(162, 0, 255);
+            }
+
+            @media (max-width:300px){
+            .timeline{
+                width:100%;
+                padding:30px 5px 30px 10px;
+            }
+
+            .timeline ul li .content h3{
+                color:#34ace0;
+                font-size:15px;
+            }
+
+            }
+
     </style>
 </head>
 
@@ -27,12 +125,49 @@
             <a class="nav-link nav-link-ltr" href="about.html">About</a>
             <a class="nav-link nav-link-ltr" href="projects.html">Projects</a>
             <a class="nav-link nav-link-ltr active" href="experience.html">Experience</a>
-            <!-- <a class="nav-link nav-link-ltr " href="contact.html">Contact</a> -->
         </div>
     </section>
 
-    <div style="margin: 6%; text-align: center;">
-        <a href="index.html" class="btn-custom" style="color: white;">Get In Touch</a>
+    <section class="experience">
+        <div class="timeline">
+            <ul>
+              <li>
+                <span>Junior Web Developer</span>
+                <div class="content">
+                  <h3>Aug 2022 - Jun 2023</h3>
+                  <h2 class="company">IDOT INC</h2>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span>Full Stack Developer</span>
+                <div class="content">
+                  <h3>May 2023 - Oct 2022</h3>
+                  <h2 class="company">PUNCHBIZ</h2>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span>Data Scientist</span>
+                <div class="content">
+                  <h3>Oct 2023 - Apr 2023</h3>
+                  <h2 class="company">SWARMX</h2>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </p>
+                </div>
+              </li>
+             
+            </ul>
+          </div>
+    </section>
+
+    <div class="bottom">
+        <a href="index.html" class="btn-custom">Get In Touch</a>
     </div>
 </body>
 </html>

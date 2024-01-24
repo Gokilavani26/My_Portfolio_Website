@@ -57,7 +57,6 @@ a.active{
   width: 100%;
 }
 
-
 .btn-custom{
   text-decoration: none;
   background-color: rgb(93, 25, 156);
@@ -73,7 +72,7 @@ a.active{
   display: flex;
   justify-content: space-around;
   margin: 5%;
-  margin-top: 6%;
+  margin-top: 4%;
 }
 
 .row{
@@ -87,4 +86,9 @@ a.active{
 
 .row a:hover{
     transform: scale(1.2);
+}
+
+.bottom{
+  margin: 4%;
+   text-align: center;
 }
